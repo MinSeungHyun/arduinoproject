@@ -205,13 +205,13 @@ void findTomato() {                                                //좌표값�
     checkxy();
     Serial.print("current y axis: ");
     Serial.println(pointy);
-    if (pointy == 1) { //현재 토마토 위치가 사진의 중심보다 좌측에 있을 경우
+    if (pointy == 1) { //현재 토마토 위치가 사진의 중심보다 위에 있을 경우
       dxl_wb.goalSpeed(DXL_UD, -1000);
       dxl_wb.goalSpeed(DXL_UD2, -1000);
       delay(10);
       sdown++;
     }
-    if (pointy == 3) { //우측에 있을 경우
+    if (pointy == 3) { //아래ㄴㄴㄴ 있을 경우
       Serial.println("chekcheck");
       dxl_wb.goalSpeed(DXL_UD, 1000);
       dxl_wb.goalSpeed(DXL_UD2, 1000);
