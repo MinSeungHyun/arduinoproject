@@ -85,7 +85,7 @@ void setup()
   Serial.println();
 
   // 와이파이 접속
-  WiFi.begin("iptime", "park0319"); // 공유기 이름과 비밀번호
+  WiFi.begin("", ""); // 공유기 이름과 비밀번호
 
   SPIFFS.begin();
 

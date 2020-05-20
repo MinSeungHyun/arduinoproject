@@ -55,7 +55,7 @@ float altitude;
 void setup()
 {
     Wire.begin();
-    Serial.begin(115200);                        // 통신속도 38400 bps
+    Serial.begin(38400);                        // 통신속도 38400 bps
 
     Serial.println("Initializing I2C devices...");
     accelgyro.initialize();
